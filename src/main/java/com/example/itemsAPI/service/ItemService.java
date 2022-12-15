@@ -1,5 +1,6 @@
 package com.example.itemsAPI.service;
 
+import com.example.itemsAPI.controller.dto.ItemDto;
 import com.example.itemsAPI.repository.ItemRepository;
 import com.example.itemsAPI.repository.entity.Item;
 import org.springframework.stereotype.Service;

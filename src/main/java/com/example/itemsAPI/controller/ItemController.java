@@ -39,7 +39,7 @@ public ItemController(ItemRepository itemRepository, ItemService itemService, It
 //    public Iterable<Item> getItems(){
 //        return itemService.all();
 //    }
-
+    @CrossOrigin
     @GetMapping("/all")
     public CollectionModel<EntityModel<Item>> getItems(){
         List<EntityModel<Item>> items=itemService.all().stream()
@@ -56,9 +56,10 @@ public ItemController(ItemRepository itemRepository, ItemService itemService, It
 //        return itemService.save(newItem);
 //    }
 
+    @CrossOrigin
     @PostMapping()
-    public ResponseEntity<?> addItem(@RequestBody Item newItem){
-    EntityModel<Item> itemModel=assembler.toModel(itemService.save(newItem));
+    public ResponseEntity<?> addItem(@RequestBody Item item){
+    EntityModel<Item> itemModel=assembler.toModel(itemService.save(item));
     return ResponseEntity //used to create an created status http message
             .created(itemModel.getRequiredLink(IanaLinkRelations.SELF).toUri())
             .body(itemModel);
