@@ -1,7 +1,7 @@
 import {addItemCard} from './items.js';
 
-let productItems=document.getElementById('product-btn');
-productItems.addEventListener('click', displayItems);
+// let productItems=document.getElementById('product-btn');
+// productItems.addEventListener('click', displayItems);
 
 async function displayItems(){
     try{
@@ -26,3 +26,6 @@ for(let i=0;i<jsonResponse._embedded.itemList.length;i++){
 }
 
 displayItems();
+
+
+export {displayItems};

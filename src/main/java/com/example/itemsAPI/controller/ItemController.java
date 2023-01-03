@@ -68,6 +68,7 @@ public ItemController(ItemRepository itemRepository, ItemService itemService, It
 //    @GetMapping("/{id}")
 //    public Item findItemById(@PathVariable Integer id){return itemService.findById(id);}
 
+    @CrossOrigin
     @GetMapping("/{id}")
     public EntityModel<Item> findItemById(@PathVariable Integer id){
     Item item=itemService.findById(id);
@@ -87,6 +88,7 @@ public ItemController(ItemRepository itemRepository, ItemService itemService, It
 //    }
 
 
+    @CrossOrigin
     @PutMapping("/{id}")
     public ResponseEntity<?> update(@RequestBody ItemDto itemDto, @PathVariable Integer id){
     Item updateItem=itemService.findById(id);
@@ -110,6 +112,7 @@ public ItemController(ItemRepository itemRepository, ItemService itemService, It
 //        itemService.delete( id );
 //    }
 
+    @CrossOrigin
     @DeleteMapping("/{id}")
     public ResponseEntity<?> delete(@PathVariable Integer id){
     itemService.delete(id);
