@@ -55,7 +55,7 @@ button> -->
     </nav>
 
     <header>
-      <h1 class="text-center">Item Form</h1>
+      <h1 class="text-center"> Add an Item  </h1>
     </header>
 
     <main>
@@ -86,15 +86,80 @@ button> -->
         </div>
         <!-- photo upload -->
         <div class="mb-3">
-          <label for="photo" class="form-label">Upload photo:</label>
-          <input type="file" class="form-control" id="photo">
+          <label for="photo" class="form-label">Image URL:</label>
+          <input type="url" class="form-control" id="photo">
         </div>
 
         <div class="text-center "> 
           <button type="submit" class="btn btn-primary m-3">Add item</button>
-          <button type="submit" class="btn btn-secondary m-3">Delete item</button>
         </div>
       </form>
+      
+      
+      
+
+      <section id="deleteItems">
+        <header>
+          <h1 class="text-center mt-5">Delete an Item: </h1>
+        </header>
+
+        <form id="deleteForm">
+          <div class="mb-3">
+            <label for="delete-item" class="form-label">Enter ID of item to delete:</label>
+            <input type="number" class="form-control" id="delete-item">
+          </div>
+          
+          <div class="text-center">
+            <button type="submit" class="btn btn-secondary m-3">Delete item</button>
+          </div>
+        </form>
+      </section>
+
+
+
+      <header>
+        <h1 class="text-center mt-5">Update an Item: </h1>
+      </header>
+
+      <form id="updateForm">
+        
+          <label for="itemID" class="form-label">ID:</label>
+          <input type="number" class="form-control" id="itemID" >
+        </div>
+        <!--product name-->
+        <div class="mb-3">
+          <label for="name" class="form-label">Product Name:</label>
+          <input type="text" class="form-control" id="name" >
+        </div>
+        <!--price -->
+        <div class="mb-3">
+          <label for="amt" class="form-label">Price:</label>
+          <input type="number" class="form-control" id="amt">
+        </div>
+        <!-- quantity -->
+        <div class="mb-3">
+          <label for="inventory" class="form-label">Quantity:</label>
+          <input type="number" class="form-control" id="inventory">
+        </div>
+        <!-- short description -->
+        <div class="mb-3">
+          <label for="summary" class="form-label">Short description:</label>
+          <input type="text" class="form-control" id="summary">
+        </div>
+        <!-- photo upload -->
+        <div class="mb-3">
+          <label for="url" class="form-label">Image URL:</label>
+          <input type="url" class="form-control" id="url">
+        </div>
+
+        <div class="text-center "> 
+          <button type="submit" class="btn btn-primary m-3">Update item</button>
+        </div>
+      </form>
+
+
+
+
     </main>
 
        <!--footer-->
@@ -154,6 +219,8 @@ button> -->
       crossorigin="anonymous"
     ></script>
     <script type="module" src= 'js/items-form.js'></script>
-      <!-- <script  type="module"src="js/itemsController.js"></script> -->
+    <script type="module" src="js/deleteitems.js"></script>
+    <script type="module"src="js/updateitem.js"></script>
+    
   </body>
 </html>

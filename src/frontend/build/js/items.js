@@ -6,7 +6,7 @@ function addItemCard(item){
     
 
     let itemCard= `<div class="card m-5 center  " style="width: 20rem;">
-    <img src="${item.img}" class="card-img-top " alt="product image">
+    <img src="${item.imageURL}" class="card-img-top " alt="product image">
     <div class="card-body mx-3 pt21">
       <h5 class="card-title font-weight-bold">${item.name}</h5>
       <p class="card-text">${item.description}</p>
@@ -35,10 +35,10 @@ for(let i=1;i<=item.quantity;i++){ //display options to selected select element
        
     
 const sampleItems = [{'name':'Vanilla Cream', 
-'img':'https://images.unsplash.com/photo-1605651202774-7d573fd3f12d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80',
+'imageURL':'https://images.unsplash.com/photo-1605651202774-7d573fd3f12d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80',
 'description':'Relaxing with rich vanilla.','price':'10.00','quantity':'6'},
 {'name':'Cinnamon',
-'img':'./images/stories-mFTOFzUKdl0-unsplash.jpg',
+'imageURL':'./images/stories-mFTOFzUKdl0-unsplash.jpg',
 'description':'Hot and Spicy','price':'12.20','quantity':'7'},
 {'name': 'Bergamot', 'img':'https://images.unsplash.com/photo-1596433809252-260c2745dfdd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fGNhbmRsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60','description':'A bergamot scented candle','price':'12.00','quantity':'10'}];
 
