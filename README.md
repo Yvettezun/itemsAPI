@@ -3,5 +3,5 @@ A full stack web application that provides users the ability to shop their favor
 
 ## Technologies 
 
-**Front-end Technologies:** HTML, CSS, JavaScript and BootStrap 
+**Front-end Technologies:** HTML, CSS, JavaScript and BootStrap  
 **Back-end Technologies:** Java, Spring Boot, mySQL
